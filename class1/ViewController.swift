@@ -11,8 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     
     let gameProvider = GameProvider()
+    let backGroundProvider = BackGroundProvider()
 
     @IBOutlet weak var factLabel: UILabel!
+    @IBOutlet weak var gameButtonLabel: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +22,11 @@ class ViewController: UIViewController {
         factLabel.text = gameProvider.randomGame()
     }
 
-    @IBAction func factButton() {
+    @IBAction func gameButton() {
         factLabel.text = gameProvider.randomGame()
-        let newColor = UIColor(red: 233/255.0, green: 86/255.0, blue: 94/255.0, alpha: 1.0)
-        view.backgroundColor = newColor
+        let color = backGroundProvider.randomColor()
+        view.backgroundColor = color
+        gameButtonLabel.tintColor = color
     }
     
 }

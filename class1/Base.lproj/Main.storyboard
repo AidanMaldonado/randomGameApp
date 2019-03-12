@@ -39,7 +39,7 @@
                                 <color key="tintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Random Game"/>
                                 <connections>
-                                    <action selector="factButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="jsf-CS-B1V"/>
+                                    <action selector="gameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="jsf-CS-B1V"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need a game to play?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2if-wc-Vmz">
@@ -66,6 +66,7 @@
                     </view>
                     <connections>
                         <outlet property="factLabel" destination="wPA-r5-VZi" id="lLO-qY-y8Q"/>
+                        <outlet property="gameButtonLabel" destination="eOq-Yh-cnS" id="Xyl-IQ-9xH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
