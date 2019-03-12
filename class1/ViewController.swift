@@ -9,12 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let gameProvider = GameProvider()
 
+    @IBOutlet weak var factLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        factLabel.text = gameProvider.randomGame()
     }
 
-
+    @IBAction func factButton() {
+        factLabel.text = gameProvider.randomGame()
+        let newColor = UIColor(red: 233/255.0, green: 86/255.0, blue: 94/255.0, alpha: 1.0)
+        view.backgroundColor = newColor
+    }
+    
 }
 
